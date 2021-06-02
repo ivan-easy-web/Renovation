@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'MuseoSansCurl_0'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_0.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCurl_1'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_1.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCurl_2'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_2.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCurl_3'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_3.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCurl_4'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_4.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_100_Italic'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_100_Italic.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_300_Italic'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_300_Italic.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_500_Italic'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_500_Italic.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_700_Italic'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_700_Italic.otf") format("truetype"); 
+}
+
+@font-face {
+    font-family: 'MuseoSansCyrl_900_Italic'; /* Гарнитура шрифта */
+    src: url("museo/MuseoSansCyrl_900_Italic.otf") format("truetype"); 
+}

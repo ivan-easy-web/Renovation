@@ -1,7 +1,8 @@
+
 body {
+    font-family: 'MuseoSansCurl_3';
     margin: 0 !important;
     padding: 0 !important;
-    font-family: sans-serif;
 }
 
 div {
@@ -40,8 +41,15 @@ div {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 0;
+    padding-top: 4px;
     font-size: 16px;
+    line-height: 19,2px;
     margin-right: 15px;
+    font-family: "MuseoSansCurl_4";
+}
+
+.hr-hidden {
+    border:none !important;
 }
 
 .logo-block {
@@ -106,6 +114,7 @@ div {
 .phone-text .number a{
     color: black;
     text-decoration: none;
+    font-family: "MuseoSansCurl_4";
 }
 
 .phone-text .caption {
@@ -147,6 +156,7 @@ div {
 .row-1 .text h2 {
     line-height: 55.2px;
     font-size: 46px;
+    font-family: "MuseoSansCurl_4";
 }
 
 .marked {
@@ -173,6 +183,7 @@ div {
     border: none;
     border-radius: 10px;
     transition: background-color 0.5s ease-out;
+    font-family: "MuseoSansCurl_4";
 }
 
 .btn-orange:hover {
