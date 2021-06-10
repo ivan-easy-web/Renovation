@@ -1,4 +1,4 @@
 # Renovation
 
-Пример вёрстки первого блока:
+Ссылка на работающий сайт:
 https://renovation-test.netlify.app/
