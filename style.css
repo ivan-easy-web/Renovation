@@ -10,184 +10,435 @@ div {
     padding: 0;
 }
 
-.row {
-    margin: 0;
-}
 
-.col {
-    padding: 0;
-    margin: 0;
-}
-
-@media (max-width: 1650px) { 
-    .title-block {
-        display: none !important;
-    }
-}
+/* --------- Navbar --------- */
 
 .navbar {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    height: 70px;
 }
 
-.navbar > div {
-    display: flex;
-}
 
-.logo-block-container {
+/* --------- Logo --------- */
+
+.logo {
+    background-color: rgba(255, 158, 45, 1);
     width: 76px;
     height: 76px;
-    background-color: rgba(255, 158, 45, 1);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding: 0;
-    padding-top: 4px;
+    padding-top: 11px;
+    padding-left: 5px;
+    padding-right: 0px;
+    font-family: "MuseoSansCurl_1";
+    font-style: normal;
+    font-weight: 600;
     font-size: 16px;
-    line-height: 19,2px;
-    margin-right: 15px;
-    font-family: "MuseoSansCurl_4";
+    line-height: 19px;
 }
 
-.hr-hidden {
-    border:none !important;
+.logo .line {
+    display: flex;
 }
+
+.logo hr {
+    width: 10px;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
+    height: 2px;
+    border: none;
+}
+
+.logo .span1 {
+    margin-left: 5px;
+}
+
+.logo .hr1 {
+    margin-left: 5px;
+}
+
+.logo .hr2 {
+    margin-left: 3px;   
+    margin-right: 6px;
+}
+
+.logo .hr-hidden {
+    border: none;
+    background: none;
+}
+
+/* --------- Logo block --------- */
 
 .logo-block {
-    padding: 5px;
-}
-
-.logo-block .line {
     display: flex;
+    height: 70px;
 }
 
-.logo-block .line hr {
-    width: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    border: none;
-    border-top: 2px solid black;
+.logo-block .text {
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 20px;
+    padding-top: 19px;
+    margin: 0;
 }
 
-.logo-block .line span {
-    padding-left: 5px;
-    padding-right: 5px;
+@media (max-width: 1200px) { 
+    .logo-block .text {
+        display: none;
+    }
 }
 
-.navbar .block {
+/* --------- Nav block --------- */
+
+.nav-block {
     display: flex;
-    height: 100%;
     align-items: center;
-    margin: 0 15px;
-    text-align: left;
-    transition: color 0.5s ease-out;
 }
 
+.nav-block .elem {
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
 
-.navbar .block-clickable:hover {
-    color: rgb(216, 133, 37);
+.nav-block .elem:hover {
+    color: rgba(255, 158, 45, 1);
     cursor: pointer;
     text-decoration: underline;
-    transition: color 0s;
 }
 
-.navbar .block p {
-    margin: 0;
-    line-height: 19.2px;
-}
+/* --------- Phone block --------- */
 
 .phone-block {
+    display: flex;
     align-items: center;
-    margin-left: 19px;
 }
 
-.phone-logo {
-    background-color: rgba(255, 158, 45, 1);
+.phone-block .icon {
     width: 48px;
     height: 48px;
     border-radius: 24px;
+    background-color: rgba(255, 158, 45, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.phone-logo svg {
-    margin-top: 14px;
+.phone-block .text {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.phone-text .number a{
+.phone-block .div-a {
+    margin-left: 24px;
+}
+
+.phone-block .text a {
     color: black;
-    text-decoration: none;
-    font-family: "MuseoSansCurl_4";
+    font-size: 20px;
+    line-height: 24px;
+    font-family: "MuseoSansCurl_1";
 }
 
-.phone-text .caption {
-    font-size: 12px;
+.phone-block .div-span {
+    margin: 0;
     text-align: right;
 }
 
-.phone-text {
-    margin-left: 19px;
+.phone-block .text span {
+    font-size: 13px;
+    line-height: 16px;
+    
 }
 
-.navbar {
-    background-color: rgba(241, 241, 241, 0.623);
+@media (max-width: 992px) { 
+    .phone-block .text {
+        display: none;
+    }
 }
 
-.row-1 .image-block {
-    background-image: url("./img/row1.png");
-    height: 648px;
+/* --------- Menu block --------- */
+
+.menu-block {
+    display: none;
+    align-items: center;
+}
+
+.menu-block .menu-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: rgba(255, 158, 45, 1);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 700px) { 
+    .menu-block {
+        display: flex;
+    }
+
+    .nav-block, .phone-block {
+        display: none;
+    }
+
+    .logo-block .text {
+        display: block;
+    }
+}
+
+/* --------- Block1 --------- */
+
+
+.block1 .col-img {
+    padding: 0 !important;
+}
+
+.block1 .img {
+    background-image: url("./img/block1.jpg");
+    height: 658px;
     background-size: cover;
-    background-position: center;
+    border-radius: 8px;
+    background-position-x: 10%
 }
 
-.row-top {
-    height: 668px;
+body {
+    background-image: url("./img/block1-background-1.jpg");
+    background-repeat: repeat-x;
+    background-position-x: 40%;
 }
 
-.row-top-container {
-    background-image: url("./img/row1-background.jpg");
-    background-position-y: -80px;
-    background-position-x: -200px;
-    background-size: auto 1000px ;
-    background-repeat: no-repeat;
+@media (max-width: 1200px) { 
+    body {
+        background-position-x: 5%;
+    }
 }
 
-.row-top {
-    background-color: rgba(255, 255, 255, 0.911);
+.white-backdrop {
+    background-color: rgba(255, 255, 255, 0.856);
 }
 
-.row-1 .text h2 {
-    line-height: 55.2px;
+.block1 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.block1 .text h2 {
+    margin-top: 77px;
+    max-width: 600px;
+    font-family: 'MuseoSansCurl_4';
     font-size: 46px;
-    font-family: "MuseoSansCurl_4";
+    line-height: 55px;
 }
 
-.marked {
-    background-color: black;
+.block1 .text h2 span {
+    background-color: black ;
     color: rgba(255, 158, 45, 1);
 }
 
-.row-1 .text ul {
-    padding: 1em;
-    list-style-type: square;
+.block1 .text ul {
+    padding: 15px;
+    list-style: square;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 16px;
 }
 
-.row-1 .text li::marker {
-    color: rgba(255, 158, 45, 1);
-    font-size: 1.2em;
+.block1 .text ul li {
+    margin-bottom: 16px;
+}
+
+.block1 .text ul li::marker {
+    color: rgba(255, 158, 45, 1) !important;
 }
 
 .btn-orange {
     background-color: rgba(255, 158, 45, 1);
-    font-size: 16px;
-    font-weight: 900;
-    height: 72px;
-    width: 282px;
+    padding: 26px 44px;
     border: none;
-    border-radius: 10px;
-    transition: background-color 0.5s ease-out;
-    font-family: "MuseoSansCurl_4";
+    border-radius: 8px;
+    font-family: 'MuseoSansCurl_4';
+    transition: transform 0.2s ease-out;
 }
 
 .btn-orange:hover {
-    background-color: rgb(216, 133, 37);
-    cursor: pointer;
-    transition: background-color  0.1s ease-in;
+    text-decoration: underline;
+}
+
+.btn-orange:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in;
+}
+
+/* --------- Block2 --------- */
+
+.block2-container {
+    background-image: url("img/block2.png");
+    background-position: right;
+    background-position-y: -180px;
+    background-repeat: no-repeat;
+    background-size: auto 766px;
+}
+
+.block2 {
+    padding-top: 82px;
+    padding-bottom: 82px;
+}
+
+.block2 .text-card {
+    background-color: rgba(255, 158, 45, 1);
+    display: flex;
+    align-items: center;
+    height: 164px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.block2 .text-card .img-o {
+    width: 100px !important;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.23);
+    border-radius: 50px;
+}
+
+.block2 .text-card .img-i {
+    margin: 7px;
+    padding: 21px;
+    background-color: white;
+    opacity: 1;
+    border-radius: 43px;
+    width: 86px;
+    height: 86px;
+}
+
+
+.block2 .text-card p {
+    margin: 0;
+    margin-left: 17px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.block2 .text-card p span {
+    font-family: 'MuseoSansCurl_4';
+}
+
+/* --------- Block3 --------- */
+
+.block3-container {
+    background-image: url("img/block3.png");
+    background-position-x: center;
+    background-size: auto 570px;
+    background-repeat: no-repeat;
+}
+
+.block3 .text h2 {
+    font-family: 'MuseoSansCurl_4';
+    font-size: 46px;
+    line-height: 55px;
+    margin-top: 123px;
+}  
+
+.block3 .text h2 span {
+    background-color: black;
+    color: rgba(255, 158, 45, 1);
+}
+
+.block3 .text p {
+    font-size: 26px;
+    line-height: 32px;
+    margin-top: 35px;
+}
+
+.block3 .video-container {
+    margin-top: 56px;
+    background-color: rgba(255, 158, 45, 1);
+    padding: 8px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.block3 .video {
+    background-image: url("img/block3-video.png");
+    background-position: center;
+    border-radius: 8px;
+    width: 448px;
+    height: 552px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .block3 .video {
+        width: auto;
+    }
+}
+
+@media (max-width: 414px) {
+    h2 {
+        font-size: 25px !important;
+        line-height: 35px !important;
+    }
+
+    .block3 .video p {
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+}
+
+.block3 .video .play-button {
+    background: none;
+    border: none;
+}
+
+.block3 .video .text {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .block3 .col {
+        display: none;
+    }
+
+    .block3 .col-12 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .block3 .video .play-button {
+        display: none;
+    }
+
+    .block3 .video .text {
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 552px;
+        -webkit-backdrop-filter: brightness(0.5);
+        backdrop-filter: brightness(0.5);
+        color: white;
+        border-radius: 8px;
+    }
+
+    .block3 .video .text h2 {
+        margin-top: 0;
+    }
 }
